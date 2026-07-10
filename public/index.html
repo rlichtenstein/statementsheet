@@ -154,6 +154,9 @@ footer a{color:var(--mut)}
   StatementSheet · Files never leave your browser · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@statementsheet.com">support@statementsheet.com</a>
 </div></footer>
 
+<!-- worker loaded eagerly as a classic script: pdf.js detects window.pdfjsWorker and
+     runs conversion fully in-page with ZERO lazy network fetches (the airplane test) -->
+<script src="vendor/pdf.worker.min.js"></script>
 <script src="vendor/pdf.min.js"></script>
 <script src="lines.js"></script>
 <script src="parser.js"></script>
