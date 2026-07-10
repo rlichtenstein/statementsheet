@@ -134,5 +134,22 @@
     $('paybtn').addEventListener('click', () => { persist(); location.href = PAYMENT_LINK; });
     $('dlxlsx').addEventListener('click', () => download('statements.xlsx', Exporter.buildXlsx(state.results), 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'));
     $('dlcsv').addEventListener('click', () => download('statements.csv', Exporter.buildCsv(state.results), 'text/csv'));
+    $('clearbtn').addEventListener('click', () => {
+      if (state.paid && !DEV && state.results.length &&
+          !confirm('Starting over clears this batch and its unlocked downloads. Continue?')) return;
+      state.results = [];
+      state.paid = DEV;
+      try { sessionStorage.removeItem('ss_results'); sessionStorage.removeItem('ss_paid'); } catch (e) {}
+      $('filelist').innerHTML = '';
+      $('results').hidden = true;
+      $('fileinput').value = '';
+      renderPreview();
+    });
+    if (DEV) {
+      const b = document.createElement('div');
+      b.textContent = 'DEV MODE — payment bypassed';
+      b.style.cssText = 'position:fixed;bottom:10px;right:10px;background:#a06a00;color:#fff;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:700;z-index:9';
+      document.body.appendChild(b);
+    }
   });
 })();

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; base-uri 'none'">
 <title>StatementSheet — Convert Bank Statement PDFs to Excel. Verified to the Penny. Files Never Leave Your Browser.</title>
-<meta name="description" content="Convert bank and credit card statement PDFs to Excel or CSV in your browser. Every conversion is balance-verified to the penny. No uploads, no subscription — $29 per batch, free if it doesn't verify.">
+<meta name="description" content="Convert bank and credit card statement PDFs to Excel or CSV in your browser. Every conversion is balance-verified to the penny. No uploads, no subscription — $19 per batch, free if it doesn't verify.">
 <style>
 :root{--ink:#16211c;--mut:#5b6a63;--brand:#0d6b4f;--brand2:#0a5740;--bg:#fafaf7;--card:#fff;--line:#e4e6e1;--ok:#0d6b4f;--warn:#a06a00;--err:#a02c2c}
 *{box-sizing:border-box;margin:0}
@@ -74,7 +74,7 @@ footer a{color:var(--mut)}
   <div class="hero">
     <h1>Convert bank statement PDFs to Excel — without your statements ever leaving your computer</h1>
     <p class="sub">Drop in statement PDFs, get a clean spreadsheet. Every conversion is checked against the statement's own running balance — <b>verified to the penny, or you don't pay.</b></p>
-    <div class="pills"><span class="pill">✓ Files never uploaded</span><span class="pill">✓ Balance-verified accuracy</span><span class="pill">✓ $29 per batch — no subscription</span></div>
+    <div class="pills"><span class="pill">✓ Files never uploaded</span><span class="pill">✓ Balance-verified accuracy</span><span class="pill">✓ $19 per batch — no subscription</span></div>
   </div>
 
   <div id="dropzone">
@@ -89,6 +89,7 @@ footer a{color:var(--mut)}
     <div class="stats">
       <div><b id="txcount">0</b> transactions</div>
       <div><b id="verifiedcount">0</b> statements verified</div>
+      <div style="margin-left:auto"><button id="clearbtn" class="ghost" style="padding:6px 14px;font-size:13px">Start over</button></div>
     </div>
     <table id="previewtable">
       <thead><tr><th>Date</th><th>Description</th><th>Amount</th><th>Balance</th></tr></thead>
@@ -96,8 +97,8 @@ footer a{color:var(--mut)}
     </table>
     <div id="previewmore"></div>
     <div id="paywall">
-      <div class="price"><b>$29</b> for this batch · instant download of Excel + CSV · only verified statements are counted</div>
-      <button id="paybtn">Unlock downloads — $29</button>
+      <div class="price"><b>$19</b> for this batch · instant download of Excel + CSV · only verified statements are counted</div>
+      <button id="paybtn">Unlock downloads — $19</button>
     </div>
     <div id="downloads" hidden>
       <button id="dlxlsx">Download Excel (.xlsx)</button>
@@ -129,7 +130,7 @@ footer a{color:var(--mut)}
   <section id="pricing">
     <h2>Pricing</h2>
     <div class="cols">
-      <div class="card"><h3>$29 per batch</h3><p>Up to 12 statements per batch, unlimited pages. Preview everything free; pay only when you want the download. No account, no subscription, no card on file.</p></div>
+      <div class="card"><h3>$19 per batch</h3><p>Up to 12 statements per batch, unlimited pages. Preview everything free; pay only when you want the download. No account, no subscription, no card on file.</p></div>
       <div class="card"><h3>Verified or free</h3><p>If a statement doesn't reconcile to the penny against its own stated balances, it's flagged "needs review" and doesn't count toward your batch. No silent errors — ever.</p></div>
       <div class="card"><h3>Why not a subscription?</h3><p>Because you probably don't convert statements every day. Tools in this category charge $30–100/month. Come back when you need us.</p></div>
     </div>
@@ -151,7 +152,8 @@ footer a{color:var(--mut)}
 </div>
 
 <footer><div class="wrap center">
-  StatementSheet · Files never leave your browser · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@statementsheet.com">support@statementsheet.com</a>
+  StatementSheet · Files never leave your browser · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@statementsheet.com">support@statementsheet.com</a><br>
+  This site was created by Richard Lichtenstein and is not associated with Berkshire Partners.
 </div></footer>
 
 <!-- worker loaded eagerly as a classic script: pdf.js detects window.pdfjsWorker and
