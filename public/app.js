@@ -6,7 +6,6 @@
   const state = { results: [], paid: false };
   const MAX_FILES = 12;
   const PAYMENT_LINK = window.SS_CONFIG.paymentLink; // set in config.js
-  const DEV = new URLSearchParams(location.search).has('dev');
 
   // ---- pdf.js glue (the only browser-only code path; keep tiny) ----
   async function extractPages(arrayBuffer) {
@@ -114,7 +113,6 @@
   // ---- payment ----
   async function checkPayment() {
     const sid = new URLSearchParams(location.search).get('session_id');
-    if (DEV) { state.paid = true; return; }
     if (!sid) return;
     try {
       const r = await fetch('/api/verify?session_id=' + encodeURIComponent(sid));
@@ -154,21 +152,16 @@
     $('dlxlsx').addEventListener('click', () => download('statements.xlsx', Exporter.buildXlsx(state.results), 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'));
     $('dlcsv').addEventListener('click', () => download('statements.csv', Exporter.buildCsv(state.results), 'text/csv'));
     $('clearbtn').addEventListener('click', () => {
-      if (state.paid && !DEV && state.results.length &&
+      if (state.paid && state.results.length &&
           !confirm('Starting over clears this batch and its unlocked downloads. Continue?')) return;
       state.results = [];
-      state.paid = DEV;
+      state.paid = false;
       try { sessionStorage.removeItem('ss_results'); sessionStorage.removeItem('ss_paid'); } catch (e) {}
       $('filelist').innerHTML = '';
       $('results').hidden = true;
       $('fileinput').value = '';
       renderPreview();
     });
-    if (DEV) {
-      const b = document.createElement('div');
-      b.textContent = 'DEV MODE — payment bypassed';
-      b.style.cssText = 'position:fixed;bottom:10px;right:10px;background:#a06a00;color:#fff;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:700;z-index:9';
-      document.body.appendChild(b);
-    }
+
   });
 })();
