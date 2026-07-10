@@ -144,7 +144,7 @@ footer a{color:var(--mut)}
     <h3>Are scanned statements supported?</h3>
     <p>Not yet. StatementSheet works with digital PDFs downloaded from your bank's website or app. Scanned/photographed statements are on the roadmap.</p>
     <h3>What exactly gets sent over the network?</h3>
-    <p>During conversion: nothing. If you buy a download, your browser goes to Stripe's checkout page (like any online purchase), and afterwards this site asks Stripe "was this session paid?" — a request that contains a Stripe session ID and nothing else. Your files and transactions never leave your machine.</p>
+    <p>During conversion: nothing. When the page first loads, a first-party, cookieless visit counter pings our own domain (page URL and referrer — never your files; watch the Network tab stay silent during conversion). If you buy a download, your browser goes to Stripe's checkout page (like any online purchase), and afterwards this site asks Stripe "was this session paid?" — a request that contains a Stripe session ID and nothing else. Your files and transactions never leave your machine.</p>
     <h3>Is my payment information safe?</h3>
     <p>Payments are handled entirely by Stripe; we never see your card number. We have no user accounts and no database.</p>
     <h3>What do I get in the download?</h3>
@@ -167,5 +167,9 @@ footer a{color:var(--mut)}
 <script src="export.js"></script>
 <script src="config.js"></script>
 <script src="app.js"></script>
+<!-- Vercel Web Analytics: first-party, cookieless, aggregate page views + referrers.
+     Same-origin script and beacon, so the strict CSP stays unchanged. Disclosed in
+     the FAQ and privacy policy. No file data is ever involved. -->
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

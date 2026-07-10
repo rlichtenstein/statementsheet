@@ -98,6 +98,19 @@
     } catch (e) {}
   }
 
+  // ---- attribution (sale tagging only; no tracking requests) ----
+  // First-touch source: ?utm_source=... on inbound links, else referrer hostname.
+  // Passed to Stripe as client_reference_id so each sale shows its channel.
+  function captureSource() {
+    try {
+      if (sessionStorage.getItem('ss_src')) return;
+      const utm = new URLSearchParams(location.search).get('utm_source');
+      let src = utm || (document.referrer ? new URL(document.referrer).hostname : '');
+      src = (src || '').replace(/[^a-zA-Z0-9_-]/g, '-').replace(/^-+|-+$/g, '').slice(0, 50);
+      if (src) sessionStorage.setItem('ss_src', src);
+    } catch (e) {}
+  }
+
   // ---- payment ----
   async function checkPayment() {
     const sid = new URLSearchParams(location.search).get('session_id');
@@ -122,6 +135,7 @@
   // ---- wire up ----
   document.addEventListener('DOMContentLoaded', async () => {
     if (typeof pdfjsLib !== 'undefined') pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdf.worker.min.js';
+    captureSource();
     restore();
     await checkPayment();
     renderPreview();
@@ -131,7 +145,12 @@
     dz.addEventListener('drop', e => { e.preventDefault(); dz.classList.remove('hover'); handleFiles(e.dataTransfer.files); });
     dz.addEventListener('click', () => $('fileinput').click());
     $('fileinput').addEventListener('change', e => handleFiles(e.target.files));
-    $('paybtn').addEventListener('click', () => { persist(); location.href = PAYMENT_LINK; });
+    $('paybtn').addEventListener('click', () => {
+      persist();
+      let src = null;
+      try { src = sessionStorage.getItem('ss_src'); } catch (e) {}
+      location.href = PAYMENT_LINK + (src ? '?client_reference_id=' + encodeURIComponent(src) : '');
+    });
     $('dlxlsx').addEventListener('click', () => download('statements.xlsx', Exporter.buildXlsx(state.results), 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'));
     $('dlcsv').addEventListener('click', () => download('statements.csv', Exporter.buildCsv(state.results), 'text/csv'));
     $('clearbtn').addEventListener('click', () => {
