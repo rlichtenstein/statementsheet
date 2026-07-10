@@ -1,0 +1,271 @@
+Date,Description,Amount,Balance,Source File,Verified
+2026-04-01,MOBILE CHECK DEPOSIT,1641.94,6966.71,stmt_a_checking_balancecol,Yes
+2026-04-02,TRANSFER FROM SAVINGS ...4472,737.36,7704.07,stmt_a_checking_balancecol,Yes
+2026-04-02,STARBUCKS #4821 BOSTON MA,-14.91,7689.16,stmt_a_checking_balancecol,Yes
+2026-04-02,TRANSFER FROM SAVINGS ...4472,2849.51,10538.67,stmt_a_checking_balancecol,Yes
+2026-04-02,PELOTON MEMBERSHIP,-239.12,10299.55,stmt_a_checking_balancecol,Yes
+2026-04-04,TJX COS #602 FRAMINGHAM,-197.59,10101.96,stmt_a_checking_balancecol,Yes
+2026-04-04,MARRIOTT BOSTON COPLEY,-56.81,10045.15,stmt_a_checking_balancecol,Yes
+2026-04-05,UBER TRIP HELP.UBER.COM,-75.05,9970.10,stmt_a_checking_balancecol,Yes
+2026-04-05,ZELLE FROM JORDAN M,707.07,10677.17,stmt_a_checking_balancecol,Yes
+2026-04-06,SHELL OIL 5744 CAMBRIDGE,-268.97,10408.20,stmt_a_checking_balancecol,Yes
+2026-04-08,AMAZON MKTPLACE PMTS,-128.53,10279.67,stmt_a_checking_balancecol,Yes
+2026-04-09,CVS/PHARMACY #01342,-207.17,10072.50,stmt_a_checking_balancecol,Yes
+2026-04-10,BLUE CROSS PREMIUM,-19.51,10052.99,stmt_a_checking_balancecol,Yes
+2026-04-11,WHOLEFDS BOS 10245,-80.78,9972.21,stmt_a_checking_balancecol,Yes
+2026-04-13,CVS/PHARMACY #01342,-212.80,9759.41,stmt_a_checking_balancecol,Yes
+2026-04-14,TJX COS #602 FRAMINGHAM,-73.15,9686.26,stmt_a_checking_balancecol,Yes
+2026-04-14,PELOTON MEMBERSHIP,-60.57,9625.69,stmt_a_checking_balancecol,Yes
+2026-04-15,ZELLE FROM JORDAN M,2189.43,11815.12,stmt_a_checking_balancecol,Yes
+2026-04-16,SHELL OIL 5744 CAMBRIDGE,-256.26,11558.86,stmt_a_checking_balancecol,Yes
+2026-04-17,UBER TRIP HELP.UBER.COM,-268.29,11290.57,stmt_a_checking_balancecol,Yes
+2026-04-19,HARVARD BOOK STORE,-73.63,11216.94,stmt_a_checking_balancecol,Yes
+2026-04-20,INTEREST PAYMENT,2817.40,14034.34,stmt_a_checking_balancecol,Yes
+2026-04-22,MOBILE CHECK DEPOSIT,932.06,14966.40,stmt_a_checking_balancecol,Yes
+2026-04-23,HARVARD BOOK STORE,-144.88,14821.52,stmt_a_checking_balancecol,Yes
+2026-04-25,COMCAST CABLE COMM,-49.82,14771.70,stmt_a_checking_balancecol,Yes
+2026-04-27,DIRECT DEP ACME CONSULTING PAYROLL,447.02,15218.72,stmt_a_checking_balancecol,Yes
+2026-04-28,MARRIOTT BOSTON COPLEY,-264.04,14954.68,stmt_a_checking_balancecol,Yes
+2026-04-28,LEGAL SEA FOODS #14,-199.76,14754.92,stmt_a_checking_balancecol,Yes
+2026-04-29,WHOLEFDS BOS 10245,-8.26,14746.66,stmt_a_checking_balancecol,Yes
+2026-04-30,WHOLEFDS BOS 10245,-115.96,14630.70,stmt_a_checking_balancecol,Yes
+2026-04-30,STARBUCKS #4821 BOSTON MA,-153.17,14477.53,stmt_a_checking_balancecol,Yes
+2026-04-30,NETFLIX.COM,-254.17,14223.36,stmt_a_checking_balancecol,Yes
+2026-04-30,COMCAST CABLE COMM,-102.29,14121.07,stmt_a_checking_balancecol,Yes
+2026-04-30,MOBILE CHECK DEPOSIT,4197.75,18318.82,stmt_a_checking_balancecol,Yes
+2026-04-30,STARBUCKS #4821 BOSTON MA,-164.60,18154.22,stmt_a_checking_balancecol,Yes
+2026-04-30,DUNKIN #341552 QUINCY MA,-277.02,17877.20,stmt_a_checking_balancecol,Yes
+2026-04-30,DIRECT DEP ACME CONSULTING PAYROLL,3174.58,21051.78,stmt_a_checking_balancecol,Yes
+2026-04-30,AMAZON MKTPLACE PMTS,-271.89,20779.89,stmt_a_checking_balancecol,Yes
+2026-04-30,TRANSFER FROM SAVINGS ...4472,2691.84,23471.73,stmt_a_checking_balancecol,Yes
+2026-04-30,MARRIOTT BOSTON COPLEY,-203.26,23268.47,stmt_a_checking_balancecol,Yes
+2026-04-30,VERIZON WIRELESS PMT,-251.98,23016.49,stmt_a_checking_balancecol,Yes
+2026-04-30,CVS/PHARMACY #01342,-224.59,22791.90,stmt_a_checking_balancecol,Yes
+2026-04-30,WHOLEFDS BOS 10245,-152.44,22639.46,stmt_a_checking_balancecol,Yes
+2026-04-30,STARBUCKS #4821 BOSTON MA,-115.28,22524.18,stmt_a_checking_balancecol,Yes
+2026-04-30,AMAZON MKTPLACE PMTS,-6.85,22517.33,stmt_a_checking_balancecol,Yes
+2026-04-30,UBER TRIP HELP.UBER.COM,-14.79,22502.54,stmt_a_checking_balancecol,Yes
+2026-04-30,ZIPCAR INC,-95.75,22406.79,stmt_a_checking_balancecol,Yes
+2026-04-30,HARVARD BOOK STORE,-241.52,22165.27,stmt_a_checking_balancecol,Yes
+2026-04-30,MARRIOTT BOSTON COPLEY,-159.48,22005.79,stmt_a_checking_balancecol,Yes
+2026-04-30,INTEREST PAYMENT,3654.96,25660.75,stmt_a_checking_balancecol,Yes
+2026-04-30,SHELL OIL 5744 CAMBRIDGE,-157.53,25503.22,stmt_a_checking_balancecol,Yes
+2026-04-30,ZELLE FROM JORDAN M,4017.93,29521.15,stmt_a_checking_balancecol,Yes
+2026-04-30,PELOTON MEMBERSHIP,-66.82,29454.33,stmt_a_checking_balancecol,Yes
+2026-04-30,ZELLE FROM JORDAN M,1162.00,30616.33,stmt_a_checking_balancecol,Yes
+2026-04-30,LEGAL SEA FOODS #14,-29.20,30587.13,stmt_a_checking_balancecol,Yes
+2026-04-30,DIRECT DEP ACME CONSULTING PAYROLL,3034.23,33621.36,stmt_a_checking_balancecol,Yes
+2026-04-30,NETFLIX.COM,-81.95,33539.41,stmt_a_checking_balancecol,Yes
+2026-04-30,DELTA AIR 0062341985542,-74.54,33464.87,stmt_a_checking_balancecol,Yes
+2026-04-01,INTEREST PAYMENT,211.30,,stmt_b_checking_sections,Yes
+2026-04-05,MOBILE CHECK DEPOSIT,1755.60,,stmt_b_checking_sections,Yes
+2026-04-06,INTEREST PAYMENT,3262.77,,stmt_b_checking_sections,Yes
+2026-04-07,DIRECT DEP ACME CONSULTING PAYROLL,2862.48,,stmt_b_checking_sections,Yes
+2026-04-08,MOBILE CHECK DEPOSIT,556.31,,stmt_b_checking_sections,Yes
+2026-04-10,MOBILE CHECK DEPOSIT,3186.73,,stmt_b_checking_sections,Yes
+2026-04-19,ZELLE FROM JORDAN M,3525.23,,stmt_b_checking_sections,Yes
+2026-04-25,MOBILE CHECK DEPOSIT,3822.93,,stmt_b_checking_sections,Yes
+2026-04-28,DIRECT DEP ACME CONSULTING PAYROLL,1508.25,,stmt_b_checking_sections,Yes
+2026-04-30,DIRECT DEP ACME CONSULTING PAYROLL,3876.71,,stmt_b_checking_sections,Yes
+2026-04-02,LEGAL SEA FOODS #14,-261.77,,stmt_b_checking_sections,Yes
+2026-04-03,PELOTON MEMBERSHIP,-243.87,,stmt_b_checking_sections,Yes
+2026-04-05,SHELL OIL 5744 CAMBRIDGE,-182.16,,stmt_b_checking_sections,Yes
+2026-04-10,HARVARD BOOK STORE,-141.87,,stmt_b_checking_sections,Yes
+2026-04-11,UBER TRIP HELP.UBER.COM,-71.43,,stmt_b_checking_sections,Yes
+2026-04-12,DUNKIN #341552 QUINCY MA,-47.38,,stmt_b_checking_sections,Yes
+2026-04-14,AMAZON MKTPLACE PMTS,-250.87,,stmt_b_checking_sections,Yes
+2026-04-14,WHOLEFDS BOS 10245,-188.98,,stmt_b_checking_sections,Yes
+2026-04-14,TJX COS #602 FRAMINGHAM,-170.26,,stmt_b_checking_sections,Yes
+2026-04-15,BLUE CROSS PREMIUM,-27.04,,stmt_b_checking_sections,Yes
+2026-04-16,PELOTON MEMBERSHIP,-148.08,,stmt_b_checking_sections,Yes
+2026-04-17,COMCAST CABLE COMM,-268.97,,stmt_b_checking_sections,Yes
+2026-04-17,DUNKIN #341552 QUINCY MA,-186.23,,stmt_b_checking_sections,Yes
+2026-04-17,TJX COS #602 FRAMINGHAM,-48.50,,stmt_b_checking_sections,Yes
+2026-04-17,PELOTON MEMBERSHIP,-247.77,,stmt_b_checking_sections,Yes
+2026-04-18,VERIZON WIRELESS PMT,-202.69,,stmt_b_checking_sections,Yes
+2026-04-21,AMAZON MKTPLACE PMTS,-21.14,,stmt_b_checking_sections,Yes
+2026-04-23,STARBUCKS #4821 BOSTON MA,-18.94,,stmt_b_checking_sections,Yes
+2026-04-24,TJX COS #602 FRAMINGHAM,-213.26,,stmt_b_checking_sections,Yes
+2026-04-25,MARRIOTT BOSTON COPLEY,-185.27,,stmt_b_checking_sections,Yes
+2026-04-25,PELOTON MEMBERSHIP,-195.37,,stmt_b_checking_sections,Yes
+2026-04-26,DUNKIN #341552 QUINCY MA,-18.20,,stmt_b_checking_sections,Yes
+2026-04-27,SHELL OIL 5744 CAMBRIDGE,-265.37,,stmt_b_checking_sections,Yes
+2026-04-29,SWEETGREEN BOSTON,-137.66,,stmt_b_checking_sections,Yes
+2026-04-30,NETFLIX.COM,-82.07,,stmt_b_checking_sections,Yes
+2026-04-30,NETFLIX.COM,-12.62,,stmt_b_checking_sections,Yes
+2026-04-30,BLUE CROSS PREMIUM,-139.41,,stmt_b_checking_sections,Yes
+2026-04-30,BLUE CROSS PREMIUM,-158.73,,stmt_b_checking_sections,Yes
+2026-04-30,CVS/PHARMACY #01342,-155.33,,stmt_b_checking_sections,Yes
+2026-04-30,BLUE CROSS PREMIUM,-79.07,,stmt_b_checking_sections,Yes
+2026-04-30,UBER TRIP HELP.UBER.COM,-135.06,,stmt_b_checking_sections,Yes
+2026-04-30,TJX COS #602 FRAMINGHAM,-257.90,,stmt_b_checking_sections,Yes
+2026-04-30,PELOTON MEMBERSHIP,-135.46,,stmt_b_checking_sections,Yes
+2026-04-30,TJX COS #602 FRAMINGHAM,-42.29,,stmt_b_checking_sections,Yes
+2026-04-02,TJX COS #602 FRAMINGHAM,-194.74,,stmt_c_creditcard,Yes
+2026-04-02,SWEETGREEN BOSTON,-40.02,,stmt_c_creditcard,Yes
+2026-04-04,UBER TRIP HELP.UBER.COM,-117.77,,stmt_c_creditcard,Yes
+2026-04-06,COMCAST CABLE COMM,-203.14,,stmt_c_creditcard,Yes
+2026-04-06,HARVARD BOOK STORE,-130.72,,stmt_c_creditcard,Yes
+2026-04-07,SHELL OIL 5744 CAMBRIDGE,-87.96,,stmt_c_creditcard,Yes
+2026-04-09,COMCAST CABLE COMM,-5.05,,stmt_c_creditcard,Yes
+2026-04-10,MARRIOTT BOSTON COPLEY,-123.84,,stmt_c_creditcard,Yes
+2026-04-10,UBER TRIP HELP.UBER.COM,-222.15,,stmt_c_creditcard,Yes
+2026-04-11,WHOLEFDS BOS 10245,-221.87,,stmt_c_creditcard,Yes
+2026-04-12,DUNKIN #341552 QUINCY MA,-170.67,,stmt_c_creditcard,Yes
+2026-04-14,DELTA AIR 0062341985542,-111.38,,stmt_c_creditcard,Yes
+2026-04-15,MBTA CHARLIE CARD,-186.16,,stmt_c_creditcard,Yes
+2026-04-16,DELTA AIR 0062341985542,-142.27,,stmt_c_creditcard,Yes
+2026-04-17,HARVARD BOOK STORE,-206.19,,stmt_c_creditcard,Yes
+2026-04-18,PELOTON MEMBERSHIP,-137.56,,stmt_c_creditcard,Yes
+2026-04-18,DUNKIN #341552 QUINCY MA,-104.07,,stmt_c_creditcard,Yes
+2026-04-19,HARVARD BOOK STORE,-145.36,,stmt_c_creditcard,Yes
+2026-04-20,LEGAL SEA FOODS #14,-156.86,,stmt_c_creditcard,Yes
+2026-04-22,VERIZON WIRELESS PMT,-225.88,,stmt_c_creditcard,Yes
+2026-04-24,NETFLIX.COM,-264.59,,stmt_c_creditcard,Yes
+2026-04-24,COMCAST CABLE COMM,-97.49,,stmt_c_creditcard,Yes
+2026-04-25,BLUE CROSS PREMIUM,-35.10,,stmt_c_creditcard,Yes
+2026-04-26,VERIZON WIRELESS PMT,-78.11,,stmt_c_creditcard,Yes
+2026-04-27,SHELL OIL 5744 CAMBRIDGE,-12.50,,stmt_c_creditcard,Yes
+2026-04-28,SWEETGREEN BOSTON,-160.19,,stmt_c_creditcard,Yes
+2026-04-28,MARRIOTT BOSTON COPLEY,-153.73,,stmt_c_creditcard,Yes
+2026-04-29,DELTA AIR 0062341985542,-239.88,,stmt_c_creditcard,Yes
+2026-04-30,BLUE CROSS PREMIUM,-135.45,,stmt_c_creditcard,Yes
+2026-04-30,STARBUCKS #4821 BOSTON MA,-219.47,,stmt_c_creditcard,Yes
+2026-04-30,MARRIOTT BOSTON COPLEY,-259.57,,stmt_c_creditcard,Yes
+2026-04-30,COMCAST CABLE COMM,-62.13,,stmt_c_creditcard,Yes
+2026-04-30,PELOTON MEMBERSHIP,-20.95,,stmt_c_creditcard,Yes
+2026-04-30,LEGAL SEA FOODS #14,-44.26,,stmt_c_creditcard,Yes
+2026-04-30,LEGAL SEA FOODS #14,-267.10,,stmt_c_creditcard,Yes
+2026-04-30,LEGAL SEA FOODS #14,-251.98,,stmt_c_creditcard,Yes
+2026-04-30,PELOTON MEMBERSHIP,-276.66,,stmt_c_creditcard,Yes
+2026-04-03,ZIPCAR INC REF #2335901990,-248.18,631.94,stmt_d_multiline,Yes
+2026-04-05,TJX COS #602 FRAMINGHAM REF #3485432021,-85.51,546.43,stmt_d_multiline,Yes
+2026-04-07,LEGAL SEA FOODS #14 REF #9284507318,-94.48,451.95,stmt_d_multiline,Yes
+2026-04-07,TJX COS #602 FRAMINGHAM REF #6906898409,-81.33,370.62,stmt_d_multiline,Yes
+2026-04-08,AMAZON MKTPLACE PMTS REF #1851819913,-181.49,189.13,stmt_d_multiline,Yes
+2026-04-09,MOBILE CHECK DEPOSIT REF #2043030161,2208.20,2397.33,stmt_d_multiline,Yes
+2026-04-10,ZELLE FROM JORDAN M REF #4459716271,2336.99,4734.32,stmt_d_multiline,Yes
+2026-04-12,MARRIOTT BOSTON COPLEY REF #5471357886,-72.27,4662.05,stmt_d_multiline,Yes
+2026-04-14,STARBUCKS #4821 BOSTON MA REF #7583090712,-195.89,4466.16,stmt_d_multiline,Yes
+2026-04-16,DUNKIN #341552 QUINCY MA REF #8136179811,-119.76,4346.40,stmt_d_multiline,Yes
+2026-04-18,MARRIOTT BOSTON COPLEY REF #9886101513,-278.35,4068.05,stmt_d_multiline,Yes
+2026-04-19,MARRIOTT BOSTON COPLEY REF #8076144396,-93.93,3974.12,stmt_d_multiline,Yes
+2026-04-21,INTEREST PAYMENT REF #3105400301,1962.28,5936.40,stmt_d_multiline,Yes
+2026-04-22,SWEETGREEN BOSTON REF #5952059278,-46.32,5890.08,stmt_d_multiline,Yes
+2026-04-22,HARVARD BOOK STORE REF #8088660633,-198.45,5691.63,stmt_d_multiline,Yes
+2026-04-22,MOBILE CHECK DEPOSIT REF #8622026979,2447.16,8138.79,stmt_d_multiline,Yes
+2026-04-24,INTEREST PAYMENT REF #7291584955,1563.96,9702.75,stmt_d_multiline,Yes
+2026-04-25,ZELLE FROM JORDAN M REF #7839626408,1913.61,11616.36,stmt_d_multiline,Yes
+2026-04-27,MARRIOTT BOSTON COPLEY REF #5014170428,-277.10,11339.26,stmt_d_multiline,Yes
+2026-04-28,STARBUCKS #4821 BOSTON MA REF #2936179853,-158.61,11180.65,stmt_d_multiline,Yes
+2026-04-28,BLUE CROSS PREMIUM REF #8518238399,-119.17,11061.48,stmt_d_multiline,Yes
+2026-04-28,SHELL OIL 5744 CAMBRIDGE REF #8164814926,-218.06,10843.42,stmt_d_multiline,Yes
+2026-04-28,STARBUCKS #4821 BOSTON MA REF #2444812497,-69.82,10773.60,stmt_d_multiline,Yes
+2026-04-29,WHOLEFDS BOS 10245 REF #2395925222,-159.67,10613.93,stmt_d_multiline,Yes
+2026-04-30,CVS/PHARMACY #01342 REF #3094011037,-88.46,10525.47,stmt_d_multiline,Yes
+2026-04-30,WHOLEFDS BOS 10245 REF #6404582459,-249.58,10275.89,stmt_d_multiline,Yes
+2026-06-02,TJX COS #602 FRAMINGHAM,-234.26,61417.22,stmt_e_checknum_yeartrap,Yes
+2026-06-02,CHECK # 2007,-67.10,61350.12,stmt_e_checknum_yeartrap,Yes
+2026-06-03,PELOTON MEMBERSHIP,-164.59,61185.53,stmt_e_checknum_yeartrap,Yes
+2026-06-04,CHECK # 2011,-216.14,60969.39,stmt_e_checknum_yeartrap,Yes
+2026-06-06,DUNKIN #341552 QUINCY MA,-34.99,60934.40,stmt_e_checknum_yeartrap,Yes
+2026-06-07,DUNKIN #341552 QUINCY MA,-84.22,60850.18,stmt_e_checknum_yeartrap,Yes
+2026-06-08,CVS/PHARMACY #01342,-178.47,60671.71,stmt_e_checknum_yeartrap,Yes
+2026-06-10,UBER TRIP HELP.UBER.COM,-184.85,60486.86,stmt_e_checknum_yeartrap,Yes
+2026-06-11,DUNKIN #341552 QUINCY MA,-93.27,60393.59,stmt_e_checknum_yeartrap,Yes
+2026-06-12,VERIZON WIRELESS PMT,-240.85,60152.74,stmt_e_checknum_yeartrap,Yes
+2026-06-13,MOBILE CHECK DEPOSIT,3009.47,63162.21,stmt_e_checknum_yeartrap,Yes
+2026-06-14,ZELLE FROM JORDAN M,2738.59,65900.80,stmt_e_checknum_yeartrap,Yes
+2026-06-15,VERIZON WIRELESS PMT,-277.33,65623.47,stmt_e_checknum_yeartrap,Yes
+2026-06-16,DUNKIN #341552 QUINCY MA,-63.29,65560.18,stmt_e_checknum_yeartrap,Yes
+2026-06-16,TJX COS #602 FRAMINGHAM,-45.97,65514.21,stmt_e_checknum_yeartrap,Yes
+2026-06-16,DUNKIN #341552 QUINCY MA,-185.82,65328.39,stmt_e_checknum_yeartrap,Yes
+2026-06-17,ZIPCAR INC,-251.17,65077.22,stmt_e_checknum_yeartrap,Yes
+2026-06-17,DUNKIN #341552 QUINCY MA,-192.60,64884.62,stmt_e_checknum_yeartrap,Yes
+2026-06-19,NETFLIX.COM,-116.14,64768.48,stmt_e_checknum_yeartrap,Yes
+2026-06-19,WHOLEFDS BOS 10245,-161.04,64607.44,stmt_e_checknum_yeartrap,Yes
+2026-06-19,HARVARD BOOK STORE,-28.77,64578.67,stmt_e_checknum_yeartrap,Yes
+2026-06-19,TRANSFER FROM SAVINGS ...4472,4452.72,69031.39,stmt_e_checknum_yeartrap,Yes
+2026-06-20,DIRECT DEP ACME CONSULTING PAYROLL,1501.23,70532.62,stmt_e_checknum_yeartrap,Yes
+2026-06-22,SWEETGREEN BOSTON,-263.60,70269.02,stmt_e_checknum_yeartrap,Yes
+2026-06-23,LEGAL SEA FOODS #14,-129.14,70139.88,stmt_e_checknum_yeartrap,Yes
+2026-06-25,MARRIOTT BOSTON COPLEY,-197.34,69942.54,stmt_e_checknum_yeartrap,Yes
+2026-06-26,SWEETGREEN BOSTON,-24.23,69918.31,stmt_e_checknum_yeartrap,Yes
+2026-06-26,VERIZON WIRELESS PMT,-72.58,69845.73,stmt_e_checknum_yeartrap,Yes
+2026-06-27,BLUE CROSS PREMIUM,-55.96,69789.77,stmt_e_checknum_yeartrap,Yes
+2026-06-28,STARBUCKS #4821 BOSTON MA,-55.79,69733.98,stmt_e_checknum_yeartrap,Yes
+2026-06-30,ZIPCAR INC,-199.08,69534.90,stmt_e_checknum_yeartrap,Yes
+2026-06-30,ZELLE FROM JORDAN M,1710.49,71245.39,stmt_e_checknum_yeartrap,Yes
+2026-06-30,ZELLE FROM JORDAN M,1423.81,72669.20,stmt_e_checknum_yeartrap,Yes
+2026-06-30,BLUE CROSS PREMIUM,-182.94,72486.26,stmt_e_checknum_yeartrap,Yes
+2026-06-30,MBTA CHARLIE CARD,-275.37,72210.89,stmt_e_checknum_yeartrap,Yes
+2026-06-30,ZELLE FROM JORDAN M,4355.65,76566.54,stmt_e_checknum_yeartrap,Yes
+2026-06-30,DUNKIN #341552 QUINCY MA,-158.08,76408.46,stmt_e_checknum_yeartrap,Yes
+2026-06-30,PELOTON MEMBERSHIP,-168.49,76239.97,stmt_e_checknum_yeartrap,Yes
+2026-06-30,SHELL OIL 5744 CAMBRIDGE,-200.46,76039.51,stmt_e_checknum_yeartrap,Yes
+2026-06-30,TJX COS #602 FRAMINGHAM,-202.32,75837.19,stmt_e_checknum_yeartrap,Yes
+2026-06-30,TRANSFER FROM SAVINGS ...4472,3735.26,79572.45,stmt_e_checknum_yeartrap,Yes
+2026-06-30,TJX COS #602 FRAMINGHAM,-224.79,79347.66,stmt_e_checknum_yeartrap,Yes
+2026-06-30,ZIPCAR INC,-61.90,79285.76,stmt_e_checknum_yeartrap,Yes
+2026-06-30,HARVARD BOOK STORE,-63.97,79221.79,stmt_e_checknum_yeartrap,Yes
+2026-06-30,AMAZON MKTPLACE PMTS,-165.62,79056.17,stmt_e_checknum_yeartrap,Yes
+2026-06-30,UBER TRIP HELP.UBER.COM,-113.71,78942.46,stmt_e_checknum_yeartrap,Yes
+2026-06-30,MARRIOTT BOSTON COPLEY,-112.57,78829.89,stmt_e_checknum_yeartrap,Yes
+2026-06-30,PELOTON MEMBERSHIP,-135.72,78694.17,stmt_e_checknum_yeartrap,Yes
+2026-06-30,TJX COS #602 FRAMINGHAM,-107.56,78586.61,stmt_e_checknum_yeartrap,Yes
+2026-06-30,INTEREST PAYMENT,4250.37,82836.98,stmt_e_checknum_yeartrap,Yes
+2026-06-30,LEGAL SEA FOODS #14,-182.29,82654.69,stmt_e_checknum_yeartrap,Yes
+2026-06-30,ZELLE FROM JORDAN M,2918.11,85572.80,stmt_e_checknum_yeartrap,Yes
+2026-06-30,SHELL OIL 5744 CAMBRIDGE,-253.53,85319.27,stmt_e_checknum_yeartrap,Yes
+2026-06-30,DUNKIN #341552 QUINCY MA,-47.43,85271.84,stmt_e_checknum_yeartrap,Yes
+2026-06-30,WHOLEFDS BOS 10245,-163.33,85108.51,stmt_e_checknum_yeartrap,Yes
+2026-06-30,BLUE CROSS PREMIUM,-204.01,84904.50,stmt_e_checknum_yeartrap,Yes
+2026-06-30,PELOTON MEMBERSHIP,-8.98,84895.52,stmt_e_checknum_yeartrap,Yes
+2026-06-30,DIRECT DEP ACME CONSULTING PAYROLL,4611.38,89506.90,stmt_e_checknum_yeartrap,Yes
+2026-06-30,MBTA CHARLIE CARD,-216.74,89290.16,stmt_e_checknum_yeartrap,Yes
+2026-06-30,COMCAST CABLE COMM,-100.13,89190.03,stmt_e_checknum_yeartrap,Yes
+2026-05-28,ONLINE PAYMENT THANK YOU,1200.00,,stmt_f_card_wf_style,Yes
+2026-06-15,ONLINE PAYMENT THANK YOU,800.00,,stmt_f_card_wf_style,Yes
+2026-05-30,267933926716591 REFUND ACME STORE,55.00,,stmt_f_card_wf_style,Yes
+2026-06-08,156878359680905 REFUND HARVARD BOOK STORE,22.49,,stmt_f_card_wf_style,Yes
+2026-05-28,854824324622906 UBER TRIP HELP.UBER.COM,-67.65,,stmt_f_card_wf_style,Yes
+2026-05-28,966511805944118 VERIZON WIRELESS PMT,-40.70,,stmt_f_card_wf_style,Yes
+2026-05-29,749149867787671 ZIPCAR INC,-185.81,,stmt_f_card_wf_style,Yes
+2026-05-30,924422030705381 BLUE CROSS PREMIUM,-50.66,,stmt_f_card_wf_style,Yes
+2026-05-31,569859119019967 COMCAST CABLE COMM,-3.79,,stmt_f_card_wf_style,Yes
+2026-06-01,670146126116162 STARBUCKS #4821 BOSTON MA,-165.90,,stmt_f_card_wf_style,Yes
+2026-06-01,773585166215025 VERIZON WIRELESS PMT,-169.23,,stmt_f_card_wf_style,Yes
+2026-06-02,630815450733520 NETFLIX.COM,-111.62,,stmt_f_card_wf_style,Yes
+2026-06-03,567265047582967 WHOLEFDS BOS 10245,-31.56,,stmt_f_card_wf_style,Yes
+2026-06-04,709057694542924 TJX COS #602 FRAMINGHAM,-177.97,,stmt_f_card_wf_style,Yes
+2026-06-05,423846015600241 VERIZON WIRELESS PMT,-76.92,,stmt_f_card_wf_style,Yes
+2026-06-05,120603770363436 AMAZON MKTPLACE PMTS,-29.52,,stmt_f_card_wf_style,Yes
+2026-06-05,647761196012334 PELOTON MEMBERSHIP,-146.40,,stmt_f_card_wf_style,Yes
+2026-06-06,140136773250682 PELOTON MEMBERSHIP,-28.00,,stmt_f_card_wf_style,Yes
+2026-06-06,927670343506066 VERIZON WIRELESS PMT,-246.51,,stmt_f_card_wf_style,Yes
+2026-06-07,109930571381535 AMAZON MKTPLACE PMTS,-34.10,,stmt_f_card_wf_style,Yes
+2026-06-08,841556554718374 LEGAL SEA FOODS #14,-28.99,,stmt_f_card_wf_style,Yes
+2026-06-09,223050290095786 WHOLEFDS BOS 10245,-92.10,,stmt_f_card_wf_style,Yes
+2026-06-10,329714222988502 PELOTON MEMBERSHIP,-42.80,,stmt_f_card_wf_style,Yes
+2026-06-11,193547302852358 COMCAST CABLE COMM,-21.47,,stmt_f_card_wf_style,Yes
+2026-06-12,578694631012266 HARVARD BOOK STORE,-201.44,,stmt_f_card_wf_style,Yes
+2026-06-13,222145285096584 BLUE CROSS PREMIUM,-74.81,,stmt_f_card_wf_style,Yes
+2026-06-14,847753597266036 ZIPCAR INC,-134.93,,stmt_f_card_wf_style,Yes
+2026-06-15,419530037520221 MBTA CHARLIE CARD,-254.82,,stmt_f_card_wf_style,Yes
+2026-06-16,699575236871526 STARBUCKS #4821 BOSTON MA,-14.50,,stmt_f_card_wf_style,Yes
+2026-06-16,552894716634426 ZIPCAR INC,-210.24,,stmt_f_card_wf_style,Yes
+2026-06-16,831788675366157 CVS/PHARMACY #01342,-252.08,,stmt_f_card_wf_style,Yes
+2026-06-17,419211637559115 WHOLEFDS BOS 10245,-86.89,,stmt_f_card_wf_style,Yes
+2026-06-18,196988401736911 HARVARD BOOK STORE,-228.53,,stmt_f_card_wf_style,Yes
+2026-06-19,689539486095940 SHELL OIL 5744 CAMBRIDGE,-216.20,,stmt_f_card_wf_style,Yes
+2026-06-20,454671198677832 WHOLEFDS BOS 10245,-51.30,,stmt_f_card_wf_style,Yes
+2026-06-21,318231213388127 COMCAST CABLE COMM,-33.08,,stmt_f_card_wf_style,Yes
+2026-06-21,416439342834851 ZIPCAR INC,-118.65,,stmt_f_card_wf_style,Yes
+2026-06-22,514524345447036 HARVARD BOOK STORE,-3.23,,stmt_f_card_wf_style,Yes
+2026-06-22,915840869887514 ZIPCAR INC,-50.98,,stmt_f_card_wf_style,Yes
+2026-06-22,866909359486828 STARBUCKS #4821 BOSTON MA,-81.61,,stmt_f_card_wf_style,Yes
+2026-06-22,964369681265983 LEGAL SEA FOODS #14,-40.17,,stmt_f_card_wf_style,Yes
+2026-06-23,837998995711223 ZIPCAR INC,-36.78,,stmt_f_card_wf_style,Yes
+2026-06-23,543466215600012 BLUE CROSS PREMIUM,-88.69,,stmt_f_card_wf_style,Yes
+2026-06-23,701778623835170 AMAZON MKTPLACE PMTS,-55.92,,stmt_f_card_wf_style,Yes
+2026-06-20,387002034936236 LATE FEE,-25.00,,stmt_f_card_wf_style,Yes

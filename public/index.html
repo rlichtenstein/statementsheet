@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; base-uri 'none'">
+<title>StatementSheet — Convert Bank Statement PDFs to Excel. Verified to the Penny. Files Never Leave Your Browser.</title>
+<meta name="description" content="Convert bank and credit card statement PDFs to Excel or CSV in your browser. Every conversion is balance-verified to the penny. No uploads, no subscription — $29 per batch, free if it doesn't verify.">
+<style>
+:root{--ink:#16211c;--mut:#5b6a63;--brand:#0d6b4f;--brand2:#0a5740;--bg:#fafaf7;--card:#fff;--line:#e4e6e1;--ok:#0d6b4f;--warn:#a06a00;--err:#a02c2c}
+*{box-sizing:border-box;margin:0}
+body{font:16px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+header{padding:18px 0;border-bottom:1px solid var(--line);background:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:19px;color:var(--brand);text-decoration:none}
+.logo span{color:var(--ink)}
+nav a{color:var(--mut);text-decoration:none;margin-left:18px;font-size:14px}
+.hero{padding:52px 0 30px;text-align:center}
+h1{font-size:34px;line-height:1.2;letter-spacing:-.5px;max-width:720px;margin:0 auto}
+.sub{color:var(--mut);max-width:620px;margin:16px auto 0;font-size:18px}
+.pills{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.pill{background:#eaf3ef;color:var(--brand2);border-radius:99px;padding:6px 14px;font-size:13.5px;font-weight:600}
+#dropzone{margin:34px auto 8px;max-width:640px;border:2px dashed #b9c4be;border-radius:14px;background:var(--card);padding:42px 24px;text-align:center;cursor:pointer;transition:all .15s}
+#dropzone.hover{border-color:var(--brand);background:#f2f8f5}
+#dropzone.busy{opacity:.6;pointer-events:none}
+#dropzone .big{font-size:17px;font-weight:600}
+#dropzone .small{color:var(--mut);font-size:13.5px;margin-top:6px}
+.privline{text-align:center;color:var(--mut);font-size:13px;margin-bottom:40px}
+#results{max-width:640px;margin:0 auto 40px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.filerow{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;flex-wrap:wrap}
+.fname{font-weight:600}
+.badge{border-radius:99px;padding:2px 10px;font-size:12.5px;font-weight:700;background:#eee}
+.badge.ok{background:#e2f2ea;color:var(--ok)}.badge.warn{background:#f7ecd7;color:var(--warn)}.badge.err{background:#f7dede;color:var(--err)}
+.detail{color:var(--mut);font-size:13px}
+.stats{display:flex;gap:26px;margin:16px 0 6px;font-size:14px;color:var(--mut)}
+.stats b{color:var(--ink);font-size:20px;display:block}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+th{color:var(--mut);text-align:left;font-weight:600;border-bottom:1px solid var(--line);padding:6px 8px}
+td{padding:6px 8px;border-bottom:1px solid #f0f1ee}
+td:nth-child(3),td:nth-child(4),th:nth-child(3),th:nth-child(4){text-align:right;font-variant-numeric:tabular-nums}
+#previewmore{color:var(--mut);font-size:13px;margin-top:8px}
+#paywall{margin-top:18px;padding:18px;background:#f2f8f5;border-radius:10px;text-align:center}
+#paywall .price{font-size:15px;margin-bottom:12px}
+button{background:var(--brand);border:0;color:#fff;font:inherit;font-weight:700;padding:12px 26px;border-radius:9px;cursor:pointer}
+button:hover{background:var(--brand2)}
+button.ghost{background:#fff;color:var(--brand);border:1.5px solid var(--brand)}
+#downloads{margin-top:18px;text-align:center;display:flex;gap:12px;justify-content:center}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:24px;margin-bottom:18px;letter-spacing:-.3px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font-size:16px;margin-bottom:8px}
+.card p{color:var(--mut);font-size:14.5px}
+.proof{background:#102a20;color:#e8f1ec;border-radius:14px;padding:30px}
+.proof h2{color:#fff}
+.proof ol{margin:14px 0 0 20px}
+.proof li{margin-bottom:10px;font-size:15px}
+.proof code{background:#1d3c2f;padding:2px 6px;border-radius:5px;font-size:13px}
+.faq h3{font-size:16px;margin:18px 0 6px}
+.faq p{color:var(--mut);font-size:15px}
+footer{padding:30px 0 50px;color:var(--mut);font-size:13px;border-top:1px solid var(--line);margin-top:40px}
+footer a{color:var(--mut)}
+.center{text-align:center}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="/">Statement<span>Sheet</span></a>
+  <nav><a href="#how">How it works</a><a href="#privacy">Privacy proof</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Convert bank statement PDFs to Excel — without your statements ever leaving your computer</h1>
+    <p class="sub">Drop in statement PDFs, get a clean spreadsheet. Every conversion is checked against the statement's own running balance — <b>verified to the penny, or you don't pay.</b></p>
+    <div class="pills"><span class="pill">✓ Files never uploaded</span><span class="pill">✓ Balance-verified accuracy</span><span class="pill">✓ $29 per batch — no subscription</span></div>
+  </div>
+
+  <div id="dropzone">
+    <div class="big">Drop statement PDFs here, or click to choose</div>
+    <div class="small">Up to 12 statements per batch · digital PDFs from your bank portal · try it free, pay only to download</div>
+    <input type="file" id="fileinput" accept=".pdf" multiple hidden>
+  </div>
+  <p class="privline">Processing happens in your browser. This page makes <b>zero</b> network requests with your file data — <a href="#privacy">verify it yourself</a>.</p>
+
+  <div id="results" hidden>
+    <div id="filelist"></div>
+    <div class="stats">
+      <div><b id="txcount">0</b> transactions</div>
+      <div><b id="verifiedcount">0</b> statements verified</div>
+    </div>
+    <table id="previewtable">
+      <thead><tr><th>Date</th><th>Description</th><th>Amount</th><th>Balance</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <div id="previewmore"></div>
+    <div id="paywall">
+      <div class="price"><b>$29</b> for this batch · instant download of Excel + CSV · only verified statements are counted</div>
+      <button id="paybtn">Unlock downloads — $29</button>
+    </div>
+    <div id="downloads" hidden>
+      <button id="dlxlsx">Download Excel (.xlsx)</button>
+      <button id="dlcsv" class="ghost">Download CSV</button>
+    </div>
+  </div>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <div class="cols">
+      <div class="card"><h3>1. Drop your PDFs</h3><p>Digital statements from any bank or card portal. The files open locally in your browser — exactly like opening them in a PDF viewer.</p></div>
+      <div class="card"><h3>2. We verify, not guess</h3><p>StatementSheet re-computes the running balance across every transaction and checks it against your statement's own opening and closing balances. If it doesn't tie to the penny, we tell you — and you don't pay for that statement.</p></div>
+      <div class="card"><h3>3. Download your spreadsheet</h3><p>One clean Excel workbook (transactions + per-statement summary) or CSV, ready for QuickBooks, Xero, or Excel. Dates normalized, debits negative, credit cards handled correctly.</p></div>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="proof">
+      <h2>Don't trust us — verify us</h2>
+      <p>Most converters upload your statements to their servers. StatementSheet was built so that it <i>can't</i> see your data, and you can prove it in 60 seconds:</p>
+      <ol>
+        <li><b>The airplane test.</b> Load this page, then disconnect your Wi-Fi. Conversion, verification, preview, and even spreadsheet generation still work — because nothing is sent anywhere.</li>
+        <li><b>The browser's own referee.</b> Open DevTools → Network tab, then convert a statement. You'll see zero requests during processing. Our <code>Content-Security-Policy</code> header instructs your browser to block this page from transmitting data anywhere except Stripe checkout.</li>
+        <li><b>Read the code.</b> The full source is public and unminified. What runs is what you read.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="cols">
+      <div class="card"><h3>$29 per batch</h3><p>Up to 12 statements per batch, unlimited pages. Preview everything free; pay only when you want the download. No account, no subscription, no card on file.</p></div>
+      <div class="card"><h3>Verified or free</h3><p>If a statement doesn't reconcile to the penny against its own stated balances, it's flagged "needs review" and doesn't count toward your batch. No silent errors — ever.</p></div>
+      <div class="card"><h3>Why not a subscription?</h3><p>Because you probably don't convert statements every day. Tools in this category charge $30–100/month. Come back when you need us.</p></div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>FAQ</h2>
+    <h3>Which banks are supported?</h3>
+    <p>Any bank or credit card that issues a digital PDF with a transaction table — checking, savings, and card statements, including separate deposits/withdrawals sections and multi-line descriptions. Because every result is balance-verified, you'll always know immediately if your bank's layout isn't parsed correctly (and you won't pay for it).</p>
+    <h3>Are scanned statements supported?</h3>
+    <p>Not yet. StatementSheet works with digital PDFs downloaded from your bank's website or app. Scanned/photographed statements are on the roadmap.</p>
+    <h3>What exactly gets sent over the network?</h3>
+    <p>During conversion: nothing. If you buy a download, your browser goes to Stripe's checkout page (like any online purchase), and afterwards this site asks Stripe "was this session paid?" — a request that contains a Stripe session ID and nothing else. Your files and transactions never leave your machine.</p>
+    <h3>Is my payment information safe?</h3>
+    <p>Payments are handled entirely by Stripe; we never see your card number. We have no user accounts and no database.</p>
+    <h3>What do I get in the download?</h3>
+    <p>An .xlsx workbook with a Transactions sheet (date, description, amount, balance, source file, verification status) and a Summary sheet (per statement: opening, closing, net, balance check result) — plus a CSV with the same transaction data.</p>
+  </section>
+</div>
+
+<footer><div class="wrap center">
+  StatementSheet · Files never leave your browser · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@statementsheet.com">support@statementsheet.com</a>
+</div></footer>
+
+<script src="vendor/pdf.min.js"></script>
+<script src="lines.js"></script>
+<script src="parser.js"></script>
+<script src="xlsx.js"></script>
+<script src="export.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
