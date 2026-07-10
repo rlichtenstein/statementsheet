@@ -1394,6 +1394,7 @@
   "opening": 1602629,
   "closing": 1796035,
   "kind": "card",
+  "checkDescs": true,
   "txs": [
    {
     "date": "2026-05-28",
@@ -1439,7 +1440,7 @@
    },
    {
     "date": "2026-05-30",
-    "desc": "BLUE CROSS PREMIUM",
+    "desc": "BLUE CROSS PREMIUM RECURRING PAYMENT PLAN D",
     "amount": -5066,
     "balance": null
    },
@@ -1481,7 +1482,7 @@
    },
    {
     "date": "2026-06-05",
-    "desc": "VERIZON WIRELESS PMT",
+    "desc": "VERIZON WIRELESS PMT RECURRING PAYMENT PLAN K",
     "amount": -7692,
     "balance": null
    },
@@ -1523,7 +1524,7 @@
    },
    {
     "date": "2026-06-09",
-    "desc": "WHOLEFDS BOS 10245",
+    "desc": "WHOLEFDS BOS 10245 RECURRING PAYMENT PLAN R",
     "amount": -9210,
     "balance": null
    },
@@ -1565,7 +1566,7 @@
    },
    {
     "date": "2026-06-16",
-    "desc": "STARBUCKS #4821 BOSTON MA",
+    "desc": "STARBUCKS #4821 BOSTON MA RECURRING PAYMENT PLAN Y",
     "amount": -1450,
     "balance": null
    },
@@ -1607,7 +1608,7 @@
    },
    {
     "date": "2026-06-21",
-    "desc": "COMCAST CABLE COMM",
+    "desc": "COMCAST CABLE COMM RECURRING PAYMENT PLAN F",
     "amount": -3308,
     "balance": null
    },
@@ -1649,7 +1650,7 @@
    },
    {
     "date": "2026-06-23",
-    "desc": "BLUE CROSS PREMIUM",
+    "desc": "BLUE CROSS PREMIUM RECURRING PAYMENT PLAN M",
     "amount": -8869,
     "balance": null
    },

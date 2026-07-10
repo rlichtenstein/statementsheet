@@ -20,6 +20,8 @@ for (const t of truth) {
     net: gotSum === gtSum,
     dates: res.transactions.length === t.txs.length &&
       JSON.stringify(res.transactions.map(x => x.date).sort()) === JSON.stringify(t.txs.map(x => x.date).sort()),
+    descs: !t.checkDescs || (res.transactions.length === t.txs.length &&
+      res.transactions.every((x, i) => x.description === t.txs[i].desc)),
   };
   const ok = Object.values(checks).every(Boolean);
   ok ? pass++ : fail++;

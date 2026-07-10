@@ -172,8 +172,15 @@
         if (sec) { section = sec; last = null; continue; }
         // continuation of previous description?
         const moneysHere = line.match(MONEY_RE) || [];
-        if (last && !moneysHere.length && line.length < 90 && !/page \d/i.test(line)) {
+        // Remittance stubs, address blocks, scanlines and page banners are NOT
+        // description text: long digit runs (account numbers, payment coupons)
+        // or telltale phrases end gluing for the current row entirely.
+        const junk = /\d{10,}/.test(line.replace(/[\s-]/g, '')) ||
+          /see reverse|payment due date|amount enclosed|account number|p\.?o\.? box|\(continued|billing rights|customer service/i.test(line);
+        if (junk) { last = null; continue; }
+        if (last && !moneysHere.length && line.length < 90 && !/page \d/i.test(line) && (last.glued || 0) < 2) {
           last.desc += ' ' + line;
+          last.glued = (last.glued || 0) + 1;
         }
         continue;
       }
@@ -194,6 +201,8 @@
         if (idx >= 0) desc = desc.slice(0, idx) + desc.slice(idx + moneyToks[i].length);
       }
       desc = desc.replace(/\s+/g, ' ').trim();
+      const refm = desc.match(/^([0-9][A-Z0-9]{9,})\s+/);
+      if (refm && (refm[1].match(/\d/g) || []).length >= 5) desc = desc.slice(refm[0].length).trim();
       const row = { date: dt, desc, moneys, section, raw: line };
       rows.push(row);
       last = row;

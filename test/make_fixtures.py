@@ -223,6 +223,13 @@ def layout_f():
     emit("Payments", bold=True); newline(14)
     for t in [x for x in txs if x["sec"]=="pay"]:
         emit(f"{md(t)} {post(t)} {t['desc']}"); emit(money(t["amount"]), right=480); newline()
+    # remittance stub (the junk block that must NOT be glued into descriptions)
+    emit("NOTICE: SEE REVERSE SIDE FOR IMPORTANT INFORMATION ABOUT YOUR ACCOUNT"); newline()
+    emit("Account Number 4400 1234 5678 9944"); newline()
+    emit("Payment Due Date 07/22/2026"); newline()
+    emit("0287767201639320000288004400123456789944"); newline()
+    emit("JORDAN SAMPLE 123 MAIN ST APT 4B"); newline()
+    emit("WELLS RIVER CARD SERVICES PO BOX 77053 MINNEAPOLIS MN 55480-7753"); newline()
     emit(f"TOTAL PAYMENTS FOR THIS PERIOD ${money(sum(t['amount'] for t in txs if t['sec']=='pay'))}", bold=True); newline(16)
     # Other Credits
     emit("Other Credits", bold=True); newline(14)
@@ -234,9 +241,13 @@ def layout_f():
     for i, t in enumerate([x for x in txs if x["sec"]=="pur"]):
         emit(f"9944 {md(t)} {post(t)} {ref()} {t['desc'][:40]}"); emit(money(-t["amount"]), right=560); newline()
         if i % 7 == 3:
-            emit("RECURRING PAYMENT", x=70); newline()
+            cont = f"RECURRING PAYMENT PLAN {chr(65 + i % 26)}"   # unique per row, like real detail lines
+            emit(cont, x=70); newline()
+            t["desc"] = t["desc"][:40] + " " + cont              # legit continuation stays glued
         if i == 10:
             emit(f"{md(t)}/26 FOREIGN TRANSACTION DETAIL", x=70); newline()
+        if i == 20:
+            emit("Transactions (continued from previous page)"); newline()
     emit(f"TOTAL PURCHASES, BALANCE TRANSFERS & OTHER CHARGES FOR THIS PERIOD ${money(-sum(t['amount'] for t in txs if t['sec']=='pur'))}", bold=True); newline(16)
     # Fees
     emit("Fees", bold=True); newline(14)
@@ -249,7 +260,7 @@ def layout_f():
     emit("TOTAL INTEREST CHARGED FOR THIS PERIOD $0.00", bold=True); newline()
     c.save()
     gt = [{k: t[k] for k in ("date","desc","amount","balance")} for t in txs]
-    return {"file": os.path.basename(path), "opening": opening, "closing": closing, "kind":"card", "txs": gt}
+    return {"file": os.path.basename(path), "opening": opening, "closing": closing, "kind":"card", "checkDescs": True, "txs": gt}
 
 os.makedirs(OUT, exist_ok=True)
 truth = [layout_a(), layout_b(), layout_c(), layout_d(), layout_e(), layout_f()]
