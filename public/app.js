@@ -21,7 +21,20 @@
   }
 
   async function handleFiles(fileList) {
-    const files = [...fileList].slice(0, MAX_FILES).filter(f => /\.pdf$/i.test(f.name));
+    const room = MAX_FILES - state.results.length;
+    if (room <= 0) {
+      $('batchnote').textContent = 'This batch is full (12 statements). Click "Start over" to begin a new batch.';
+      $('batchnote').hidden = false;
+      $('results').hidden = false;
+      return;
+    }
+    const dropped = [...fileList].filter(f => /\.pdf$/i.test(f.name));
+    const files = dropped.slice(0, room);
+    $('batchnote').hidden = true;
+    if (dropped.length > room) {
+      $('batchnote').textContent = `A batch is up to 12 statements — the first ${files.length} of ${dropped.length} files were added. Start a new batch for the rest.`;
+      $('batchnote').hidden = false;
+    }
     if (!files.length) return;
     $('results').hidden = false;
     $('dropzone').classList.add('busy');
@@ -160,6 +173,7 @@
       $('filelist').innerHTML = '';
       $('results').hidden = true;
       $('fileinput').value = '';
+      $('batchnote').hidden = true;
       renderPreview();
     });
 
