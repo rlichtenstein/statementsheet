@@ -145,6 +145,8 @@ footer a{color:var(--mut)}
     <p>Not yet. StatementSheet works with digital PDFs downloaded from your bank's website or app. Scanned/photographed statements are on the roadmap.</p>
     <h3>What exactly gets sent over the network?</h3>
     <p>During conversion: nothing. When the page first loads, a first-party, cookieless visit counter pings our own domain (page URL and referrer — never your files; watch the Network tab stay silent during conversion). If you buy a download, your browser goes to Stripe's checkout page (like any online purchase), and afterwards this site asks Stripe "was this session paid?" — a request that contains a Stripe session ID and nothing else. Your files and transactions never leave your machine.</p>
+    <h3>Can browser extensions see my data?</h3>
+    <p>Extensions you've installed with "read data on all websites" permission can read anything on any page — this site, your bank's website, or any other converter. That's how browsers work, and no statement tool can prevent it. Converting something especially sensitive? Use a private/incognito window (extensions are disabled there by default) — StatementSheet works fully in incognito, precisely because nothing is stored on our side.</p>
     <h3>Is my payment information safe?</h3>
     <p>Payments are handled entirely by Stripe; we never see your card number. We have no user accounts and no database.</p>
     <h3>What do I get in the download?</h3>
@@ -154,6 +156,7 @@ footer a{color:var(--mut)}
 
 <footer><div class="wrap center">
   StatementSheet · Files never leave your browser · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@statementsheets.com">support@statementsheets.com</a><br>
+  Compare: <a href="statementsheet-vs-docuclipper.html">vs DocuClipper</a> · <a href="statementsheet-vs-moneythumb.html">vs MoneyThumb</a> · <a href="best-bank-statement-converters.html">best statement converters</a><br>
   This site was created by Richard Lichtenstein and is not associated with Berkshire Partners.
 </div></footer>
 
