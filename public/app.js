@@ -96,6 +96,7 @@
     $('previewmore').textContent = all.length > 8 ? `…and ${all.length - 8} more rows` : '';
     $('paywall').hidden = state.paid;
     $('downloads').hidden = !state.paid;
+    $('exportopts').hidden = !state.paid;
   }
 
   // ---- persistence across the Stripe redirect (stays on this device) ----
@@ -121,6 +122,17 @@
       src = (src || '').replace(/[^a-zA-Z0-9_-]/g, '-').replace(/^-+|-+$/g, '').slice(0, 50);
       if (src) sessionStorage.setItem('ss_src', src);
     } catch (e) {}
+  }
+
+  // ---- export preferences (kept in localStorage: settings only, never file data) ----
+  function loadPrefs() {
+    try { return JSON.parse(localStorage.getItem('ss_prefs')) || {}; } catch (e) { return {}; }
+  }
+  function savePrefs() {
+    try { localStorage.setItem('ss_prefs', JSON.stringify({ dateFmt: $('optdate').value, amt: $('optamt').value })); } catch (e) {}
+  }
+  function exportOpts() {
+    return { dateFmt: $('optdate').value, split: $('optamt').value === 'split' };
   }
 
   // ---- payment ----
@@ -162,8 +174,13 @@
       try { src = sessionStorage.getItem('ss_src'); } catch (e) {}
       location.href = PAYMENT_LINK + (src ? '?client_reference_id=' + encodeURIComponent(src) : '');
     });
-    $('dlxlsx').addEventListener('click', () => download('statements.xlsx', Exporter.buildXlsx(state.results), 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'));
-    $('dlcsv').addEventListener('click', () => download('statements.csv', Exporter.buildCsv(state.results), 'text/csv'));
+    const prefs = loadPrefs();
+    if (prefs.dateFmt) $('optdate').value = prefs.dateFmt;
+    if (prefs.amt) $('optamt').value = prefs.amt;
+    $('optdate').addEventListener('change', savePrefs);
+    $('optamt').addEventListener('change', savePrefs);
+    $('dlxlsx').addEventListener('click', () => download('statements.xlsx', Exporter.buildXlsx(state.results, exportOpts()), 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'));
+    $('dlcsv').addEventListener('click', () => download('statements.csv', Exporter.buildCsv(state.results, exportOpts()), 'text/csv'));
     $('clearbtn').addEventListener('click', () => {
       if (state.paid && state.results.length &&
           !confirm('Starting over clears this batch and its unlocked downloads. Continue?')) return;

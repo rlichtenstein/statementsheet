@@ -102,6 +102,18 @@ footer a{color:var(--mut)}
       <div class="price"><b>$19</b> for this batch · instant download of Excel + CSV · only verified statements are counted</div>
       <button id="paybtn">Unlock downloads — $19</button>
     </div>
+    <div id="exportopts" hidden style="margin-top:18px;text-align:center;font-size:13.5px;color:var(--mut)">
+      <label>Dates <select id="optdate" style="font:inherit;padding:4px 8px;border-radius:6px;border:1px solid var(--line)">
+        <option value="iso">2026-05-13</option>
+        <option value="mdy">05/13/2026</option>
+      </select></label>
+      &nbsp;&nbsp;
+      <label>Amounts <select id="optamt" style="font:inherit;padding:4px 8px;border-radius:6px;border:1px solid var(--line)">
+        <option value="single">One signed column</option>
+        <option value="split">Debit &amp; credit columns</option>
+      </select></label>
+      <div style="margin-top:6px">Remembered on this device — like everything else here, never sent anywhere.</div>
+    </div>
     <div id="downloads" hidden>
       <button id="dlxlsx">Download Excel (.xlsx)</button>
       <button id="dlcsv" class="ghost">Download CSV</button>
